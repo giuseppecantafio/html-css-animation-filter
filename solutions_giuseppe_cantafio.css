@@ -1,0 +1,183 @@
+/* 1 */
+.ex-1-square{
+    transition: all 2s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/* 2 */
+.ex-2-square{
+    transition: all 5s;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* 3 */
+.ex-3-square{
+    transition: all 4s;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* 4 */
+.ex-4-square{
+    transition: all 4s;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/* 5 */
+.ex-5-square{
+    transition: all 4s;
+}
+.ex-5-square:hover{
+    transform: scale(1.5);
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+/* 6 */
+.ex-6-img{
+    transition: all;
+}
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* 7 */
+.ex-7-img{
+    transition: all 6s;
+}
+.ex-7-img:hover{
+    filter: blur(4px) grayscale(100%);
+}
+
+/* 8 */
+.ex-8-img{
+    transition: all 4s;
+}
+.ex-8-img:hover{
+    filter: blur(2px) hue-rotate(90deg);
+    border-radius: 10px;
+}
+
+/* 9 */
+.ex-9-img{
+    transition: all 4s;
+}
+.ex-9-img:hover{
+    filter: blur(2px) hue-rotate(90deg);
+    border-radius: 10px;
+    transform: scale(0.8);
+}
+
+/* 10 */
+.ex-10-icon{
+    animation-name: prova;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes prova{
+    0%{ transform: rotate(360deg);
+    }
+}
+
+/* 11 */
+.ex-11-icon:hover{
+    animation-name: prova1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes prova1{
+    0%{ transform: rotate(0deg);
+    }
+    80%{ transform: rotate(270deg);
+    }
+    100%{ transform: rotate(0deg);
+    }
+}
+
+/* 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: prova2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes prova2{
+    0%{ left: 10%
+    }
+    100%{ left: 50%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: prova3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes prova3{
+    0%{ right: 10%
+    }
+    100%{ right: 50%;
+    }
+}
+
+/* 13 */
+.ex-13-button .ex-13-top-white{
+    animation-name: prova4;
+    animation-duration: 2s;
+    top: 0;
+    left: 0%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes prova4{
+    0% { left: 10%;
+         top: -20%;
+   }
+   25% { left: -10%;
+         top: 80%          
+   }
+   50% { left: 95%;
+         top: 80%;
+   }
+   75% { left: 95%;
+         top: -10%;
+   }
+   100% { left: 10%;
+          top: -20%;     
+   }
+}
+.ex-13-button .ex-13-bottom-white{
+    animation-name: prova5;
+    bottom: 0;
+    right: 0;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes prova5{
+    0% { bottom: -10%;
+         right: -20%;
+    }
+    25% { bottom: -10%;
+          right: 80%          
+    }
+    50% { bottom: 95%;
+          right: 80%;
+    }
+    75% { 
+          bottom: 95%;
+          right: -10%;
+    }
+    100% { bottom: -10%;
+           right: -20%;     
+    }

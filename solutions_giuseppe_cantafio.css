@@ -105,6 +105,32 @@
 }
 
 /* 12 */
+.ex-12-button:hover{
+    animation-name: provetta;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes provetta{
+    0%{
+        color: blue;
+    }
+    20%{
+        color:brown
+    }
+    40%{
+        color: blueviolet;
+    }
+    60%{
+        color: aqua;
+    }
+    80%{
+        color: pink
+    }
+    100%{
+        color: coral;
+    }
+}
 .ex-12-button:hover .ex-12-top-white{
     animation-name: prova2;
     animation-duration: 3s;
@@ -133,51 +159,54 @@
 /* 13 */
 .ex-13-button .ex-13-top-white{
     animation-name: prova4;
-    animation-duration: 2s;
-    top: 0;
-    left: 0%;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 @keyframes prova4{
-    0% { left: 10%;
+    0%{ left: 10%;
          top: -20%;
-   }
-   25% { left: -10%;
-         top: 80%          
-   }
-   50% { left: 95%;
-         top: 80%;
-   }
-   75% { left: 95%;
-         top: -10%;
-   }
-   100% { left: 10%;
+    }
+    30%{ left: 90%;
+          top: -20%          
+    }
+    45%{ left: 90%;
+          top: 90%;
+    }
+    75%{ left: -10%;
+          top: 90%;
+    }
+    90%{ left: -10%;
+         top: -20%;
+    }
+   100%{ left: 10%;
           top: -20%;     
-   }
+    }
 }
 .ex-13-button .ex-13-bottom-white{
     animation-name: prova5;
-    bottom: 0;
-    right: 0;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 @keyframes prova5{
-    0% { bottom: -10%;
-         right: -20%;
-    }
-    25% { bottom: -10%;
-          right: 80%          
-    }
-    50% { bottom: 95%;
-          right: 80%;
-    }
-    75% { 
-          bottom: 95%;
-          right: -10%;
-    }
-    100% { bottom: -10%;
-           right: -20%;     
-    }
+   0%{ right: 10%;
+       bottom: -20%;
+   }
+   30%{ right: 80%;
+        bottom: -20%          
+   }
+   45%{ right: 80%;
+        bottom: 90%;
+   }
+   75%{ right: -10%;
+        bottom: 90%;
+   }
+   90%{ right: -10%;
+        bottom: -20%;
+   }
+  100%{ right: 10%;
+        bottom: -20%;     
+   }
